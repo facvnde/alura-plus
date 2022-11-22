@@ -1,0 +1,203 @@
+/* aqui crio as variáveis para as cores da página*/
+:root {
+	--cor-de-fundo:			#00030C;
+	--branco-principal:		#FFFFFF;
+	--cinza-secundario:		#C0C0C0;
+
+	--botao-cinza-hover:	#C0C0C0F2;
+	--fonte-botao-cinza:	#00030C;
+
+	--botao-azul:			#167BF7;
+	--botao-azul-hover:		#074da3;
+
+	--fonte-principal:	'Inter';
+}
+
+/* aqui deixo setado os dados da tela toda (meio que padrão) */
+body {
+	background-color:	var(--cor-de-fundo);
+	color:				var(--branco-principal);
+	font-family:		var(--fonte-principal);
+	font-size:			16px;
+	font-weight:		400;
+}
+
+/* o asterisco é meio que semelhante ao seletor do mysql (onde o mesmo se demonstra ser "geral") */
+* {
+	margin:		0;
+	padding:	0;
+}
+
+/* aqui deixo setado o tamanho dos containers */
+.container {
+	height:					100vh;
+	display:				grid;
+	grid-template-columns:	50% 50%;
+}
+
+/* estilização do container principal (o primeiro que aparece) */
+.principal {
+	background-image:	url('../img/Background.png');
+	background-repeat:	no-repeat;
+	background-size:	contain;
+
+	align-items:		center;
+	text-align:			center;
+}
+
+/* aqui vou estilizando a imagem do Combo+ */
+.img-combo {
+	margin:		1em 0 2em 0;
+}
+
+/* aqui vou estilizando o título do container */
+.container-titulo {
+	font-size:		25px;
+	font-weight:	700;
+}
+
+/* aqui vou estilizando o botão (de assinatura do combo) do container */
+.botao-assinatura {
+	background-color:	var(--botao-azul);
+	color:				var(--branco-principal);
+
+	border-radius:		5px;
+	padding:			1em;
+	display:			block;
+
+	text-decoration:	none;
+	margin-bottom:		1em;
+
+	transition: 0.5s background-color;
+}
+
+/* aqui vou estilizar o botão (secundário) do container */
+.botao-secundario {
+	background-color:	transparent;
+	border:				2px solid var(--branco-principal);
+}
+
+.botao-secundario:hover {
+	background-color:	var(--botao-cinza-hover);
+	border:				2px solid var(--botao-cinza-hover);
+	color:				var(--fonte-botao-cinza);
+}
+
+/* aqui vou estilizar o texto abaixo do botão transparente */
+.aviso-preco {
+	font-size:	12px;
+	color:		var(--cinza-secundario);
+}
+
+/* aqui vou estilizar a caixa inteira do content principal */
+.container-caixa {
+	margin: 0 6em;
+}
+
+/* estilização do container secundario */
+.secundario {
+	align-items:	center;
+	margin:			0 10em;
+}
+
+/* deixo mais responsivo a imagem do container secundário */
+.img-secundario {
+	width:	80%;
+}
+
+/* estilizo a div secundaria */
+.conteudo-secundario {
+	padding:	2em;
+}
+
+/* estilizo o título do container secundário */
+.titulo-secundario {
+	font-size:		48px;
+	font-weight:	700;
+	color:			var(--branco-principal);
+}
+
+/* estilizo a descrição do container secundário */
+.descricao-secundario {
+	font-size:		16px;
+	font-weight:	400;
+	color:			var(--cinza-secundario);
+}
+
+/* estilizo o botão de Assine Combo+ */
+.botao-combo {
+	display:	inline-block;
+	margin-top:	1em;
+}
+
+.botao-assine:hover, .botao-combo:hover {
+	background-color: var(--botao-azul-hover);
+}
+
+/* estilizo a section dispositivos */
+.dispositivos {
+	text-align: center;
+}
+
+/* estilizo o título da seção dispositivos */
+.titulo-dispositivos {
+	font-size:	48px;
+}
+
+/* estilizo a lista de dispositivos */
+.lista-dispositivos {
+	display:			flex;
+	justify-content:	center;
+	list-style-type:	none;
+	margin:				5em 0;
+}
+
+/* estilizo o nome dos dispositivos da lista */
+.item-lista {
+	font-size:	32px;
+	color:		var(--branco-principal);
+}
+
+/* estilizo o footer */
+.rodape {
+	display:	block;
+	text-align:	center;
+	margin:		5em 3em;
+}
+
+/* estilizo a lista de links */
+.lista-footer {
+	display:			flex;
+	justify-content:	center;
+	list-style-type:	none;
+	padding:			2em 0;
+}
+
+/* estilizo a linha (e o link) */
+.lista-link {
+	padding: 0 8px;
+}
+
+.lista-link a {
+	font-size:			16px;
+	font-weight:		400px;
+	text-decoration:	none;
+	color:				var(--branco-principal);
+}
+
+.lista-link a:hover {
+	color:				var(--botao-azul);
+	text-decoration:	underline;
+}
+
+.lista-link a:active {
+	color:				red;
+	text-decoration:	underline;
+}
+
+/* estilizo o parágrado de direitos autorais */
+.footer-autoral {
+	font-size:	14px;
+	color:		var(--cinza-secundario);
+	margin:		1em 0;
+}
